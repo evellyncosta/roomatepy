@@ -2,13 +2,13 @@
 PoC - Proof of Concept cujo o o objetivo é testar o cachetools do python como ferramenta de cache
 
 # Tecnologias
--Python
--MariaDB
--Docker e Docker-Compose
--FastAPI
--Cachetools
--Poetry
--Alembic
+#### Python
+#### MariaDB
+#### Docker e Docker-Compose
+#### FastAPI
+#### Cachetools
+#### Poetry
+#### Alembic
 
 
 # Setup
