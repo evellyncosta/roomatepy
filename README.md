@@ -1,5 +1,5 @@
 # roomatepy
-PoC - Proof of Concept cujo o o objetivo é testar o cachetools do python como ferramenta de cache
+Este projeto representa uma Prova de Conceito (PoC) com o principal objetivo de avaliar e testar as funcionalidades e a eficiência do CacheTools, uma biblioteca Python para gerenciamento de cache.
 
 # Tecnologias
 #### Python
