@@ -1,5 +1,5 @@
 # roomatepy
-PoC - Proof of Concept cujo o o objetivo eh testar o cachetools do python como ferramenta de cache
+PoC - Proof of Concept cujo o o objetivo é testar o cachetools do python como ferramenta de cache
 
 # Tecnologias
 Python
