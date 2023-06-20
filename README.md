@@ -19,3 +19,7 @@ Este projeto usa docker e docker-compose, para rodar o projeto, execute o comand
 e em seguida
 
 `docker-compose up`
+
+
+O projeto iniciará na porta 8080, portanto, voce pode acessar:
+`http://0.0.0.0:8080/rooms`
