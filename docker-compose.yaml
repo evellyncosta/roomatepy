@@ -1,0 +1,33 @@
+version: '3'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+    ports:
+      - 8080:8080
+    depends_on:
+      - db
+    command: >
+      sh -c "poetry run alembic upgrade head && poetry run uvicorn main:app --host 0.0.0.0 --port 8080"
+    networks:
+      - app-network
+  db:
+    image: mariadb:latest
+    environment:
+      - MYSQL_DATABASE=roommate
+      - MYSQL_USER=roommate
+      - MYSQL_PASSWORD=roommate
+      - MYSQL_ROOT_PASSWORD=rootpassword
+    volumes:
+      - mariadb_data:/var/lib/mysql/
+    ports:
+      - 3306:3306
+    networks:
+      - app-network
+volumes:
+  mariadb_data:
+networks:
+  app-network:
